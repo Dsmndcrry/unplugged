@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  max-width: 1200px;
 }
 
 /*
@@ -88,49 +89,147 @@ textarea {
    ========================================================================== */
 
   /* ------------------- Base Header - Footer Styles ------------------------*/
+
   header,
   footer {
        display:flex;
        justify-content: center;
        align-items: center;
        flex-flow: row wrap;
+
   }
 
   header .content-wrapper {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: row wrap;
   }
 
   header nav {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row nowrap;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: row wrap;
+       width:90%;
+  }
+
+  header nav img {
+       width: 100%;
+  }
+
+  header nav ul {
+       display:flex;
+       justify-content: space-around;
+       align-items: center;
+       padding: 0;
+       width:48%;
+  }
+
+  nav ul li {
+       display:flex;
+       justify-content: space-around;
+       align-items: center;
+
+  }
+
+  main{
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: row wrap;
+
   }
 
   main .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: row wrap;
+       width:100%;
   }
+
+  .hero h1 {
+    width: 88%;
+    text-align: center;
+
+  }
+
+
 
   aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-
-  }
-
-    .features .content-wrapepr {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      width:100%;
+  }
+
+  aside h2,
+  aside p {
+      width: 88%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+
+  aside .signup-form {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+
+  }
+
+    aside .signup-form input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      text-align: center;
+      padding: 0;
+      width: 50%;
+    }
+
+
+
+    .features {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+
+    .features .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+
+
+    .features h1 {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    .features .content-wrapper article p {
+      text-align: center;
+      margin: 0;
+    }
+
+    .features-item-description  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      text-align: center;
+      padding: 0 20px;
+
     }
 
     .reviews {
@@ -138,6 +237,13 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      width: 100%;
+    }
+
+    .reviews h1, h2, p{
+      text-align: center;
+      padding: 0 20px;
+
     }
 
     .mission {
@@ -147,11 +253,23 @@ textarea {
       flex-flow: row wrap;
     }
 
-    .contact {
+    footer .footer-content {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      width: 100%;
+
+    }
+
+    .contact h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      text-align: center;
+      width: 100%;
+      padding: 0;
     }
 
     .faq {
@@ -166,6 +284,10 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+    }
+
+    .copyright {
+      width: 100%;
     }
 
 
