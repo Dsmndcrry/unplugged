@@ -118,6 +118,7 @@ textarea {
        width: 100%;
   }
 
+
   header nav ul {
        display:flex;
        justify-content: space-around;
@@ -173,7 +174,7 @@ textarea {
       justify-content: center;
   }
 
-  aside .signup-form {
+  aside .signup-form, .signup-info {
       width: 60%;
       display: flex;
       justify-content: center;
@@ -190,6 +191,10 @@ textarea {
       text-align: center;
       padding: 0;
       width: 50%;
+    }
+
+    .contact h3 {
+      text-align: center;
     }
 
 
@@ -262,6 +267,14 @@ textarea {
 
     }
 
+    .general-information {
+      text-align: center;
+    }
+
+    .chat {
+      text-align: center;
+    }
+
     .contact h2 {
       display: flex;
       justify-content: center;
@@ -270,6 +283,12 @@ textarea {
       text-align: center;
       width: 100%;
       padding: 0;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
 
     .faq {
@@ -379,15 +398,142 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
+   /*Tablet styles here*/
+     header nav img {
+         width: 50%;
+     }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+     header nav {
+         flex-flow: nowrap;
+     }
+
+     header nav ul{
+         width : 50%;
+     }
+
+     aside .signup-form, .signup-info {
+         width: 50%;
+     }
+
+     .features article {
+       width: 50%;
+     }
+
+    footer  {
+       width: 100%;
+       align-items: baseline;
+
+     }
+
+     footer .content-wrapper {
+         display: flex;
+         justify-content: center;
+         width: 50%;
+     }
+
+      .contact,
+      .social {
+         width: 50%;
+     }
+
+
+     .mission-content {
+       display: flex;
+       flex-flow: row wrap;
+     }
+
+     .mission-content h2 {
+         display: flex;
+         justify-content: center;
+         text-align: center;
+         flex-flow: row wrap;
+     }
+
+
+     .mission-content p {
+       display: flex;
+       justify-content: space-between;
+       width: 40%;
+     }
+
+     .map {
+       width: 100%;
+     }
+
+
+     .review-image {
+       width: 50%;
+     }
+
+     .reviews article {
+       width: 50%;
+
+     }
+
+     .information {
+         display: flex;
+         flex-flow: row wrap;
+     }
+
+     .information h2 {
+         width: 100%;
+         padding: 0;
+     }
+
+     .general-information,
+     .chat {
+         width: 50%;
+     }
+
+     .faq .content-wrapper {
+         flex-flow: row wrap;
+
+     }
+
+     .questions {
+       display: flex;
+       flex-flow: row wrap;
+
+     }
+
+     .question-1,
+     .question-2,
+     .question-3,
+     .question-4 {
+       width: 50%;
+     }
+
+     .question-4 p {
+       margin-top: 53px;
+
+     }
+
+
+     .contact {
+       display: flex;
+       flex-flow: row wrap;
+       width : 50%;
+       justify-content: center;
+     }
+
+     .contact h2 {
+       text-align: center;
+     }
+
+
+     address p {
+       width: 100%;
+       padding: 0;
+     }
+
+
+
+   }
+
+
+   @media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
 }
 
 /* ==========================================================================
